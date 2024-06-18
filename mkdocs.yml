@@ -102,17 +102,9 @@ extra:
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   social: # 社交媒体
     - icon: fontawesome/solid/house
-      link: http://www.cuishuaiwen.com/
+      link: http://www.lbrdc.com/
     - icon: fontawesome/brands/github
-      link: https://github.com/Shuaiwen-Cui
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/shaun-shuaiwen-cui/
-    - icon: fontawesome/brands/researchgate
-      link: https://www.researchgate.net/profile/Shuaiwen-Cui
-    - icon: fontawesome/brands/orcid
-      link: https://orcid.org/0000-0003-4447-6687
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ShuaiwenC
+      link: https://github.com/MoneyJoy
 markdown_extensions: # markdown extensions
   - abbr
   - admonition
