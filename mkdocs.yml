@@ -102,7 +102,7 @@ extra:
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   social: # 社交媒体
     - icon: fontawesome/solid/house
-      link: http://www.lbrdc.com/
+      link: http://www.lbrdc.top/
     - icon: fontawesome/brands/github
       link: https://github.com/MoneyJoy
 markdown_extensions: # markdown extensions
