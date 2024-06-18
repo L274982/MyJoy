@@ -83,6 +83,11 @@ extra:
   status: # 不是很懂有什么用
     new: Recently added
     deprecated: Deprecated
+  social: # 社交媒体
+    - icon: fontawesome/solid/house
+      link: http://www.cuishuaiwen.com/
+    - icon: fontawesome/brands/github
+      link: https://github.com/Shuaiwen-Cui
   analytics: # 分析工具， 我反正没用到
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
