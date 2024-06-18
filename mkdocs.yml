@@ -6,6 +6,9 @@ site_author: MoneyJoy # 作者
 #repo_name: L274982/MyJoy #仓库名称
 #repo_url: https://github.com/L274982/MyJoy.git # 仓库地址
 
+repo_name: MoneyJoy/MyJoy # 仓库名称
+repo_url: https://github.com/MoneyJoy/MyJoy.git/ # 仓库地址
+
 copyright: Copyright &copy; 2024 ~ now | 🚀 MyJoy
 
 # 配置
