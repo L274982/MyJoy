@@ -1,0 +1,158 @@
+site_name: MyJoy # 项目名称
+site_url: http://107.151.201.118# 我在nginx中使用的是8000端口，如果你使用的是80端口，可以直接写成https://localhost/。
+site_author: MoneyJoy # 作者
+
+# 代码仓库信息
+#repo_name: L274982/MyJoy #仓库名称
+#repo_url: https://github.com/L274982/MyJoy.git # 仓库地址
+
+copyright: Copyright &copy; 2024 ~ now | 🚀 MyJoy
+
+# 配置
+theme:
+  name: material # 主题名称，Material已经是最优秀的选择了，相信我。
+  logo: images/logo.png # logo 图片
+  features: # 功能  
+    - announce.dismiss # 可以叉掉公告的功能
+    - content.action.edit # 编辑按钮，似乎没啥用
+    - content.action.view # 查看按钮，似乎没啥用
+    - content.code.annotate # 代码注释，具体不清楚
+    - content.code.copy # 复制代码按钮
+    # - content.code.select # 选择代码按钮
+    # - content.tabs.link # 链接标签
+    - content.tooltips # 不太清楚呢这个
+    # - header.autohide # 自动隐藏header
+    - navigation.expand # 默认展开导航栏
+    - navigation.footer # 底部导航栏
+    - navigation.indexes # 索引按钮可以直接触发文件，而不是只能点击其下属选项浏览，这个功能可以给对应的section提供很好的预览和导航功能
+    # - navigation.instant # 瞬间加载 - 如果这个开着，那么语言切换后就会跳转至首页，所以我关掉了
+    - navigation.instant.prefetch # 预加载
+    - navigation.instant.progress # 进度条
+    - navigation.path # 导航路径， 目前好像没啥用
+    # - navigation.prune # 只构建可见的页面
+    - navigation.sections # 导航栏的section
+    - navigation.tabs # 顶级索引被作为tab
+    - navigation.tabs.sticky # tab始终可见
+    - navigation.top # 开启顶部导航栏
+    - navigation.tracking # 导航栏跟踪
+    - search.highlight # 搜索高亮
+    - search.share # 搜索分享
+    - search.suggest # 搜索建议
+    - toc.follow # 目录跟踪-页面右侧的小目录
+    # - toc.integrate # 目录跟踪集成到左侧大目录中
+  palette:
+    - media: "(prefers-color-scheme)" # 主题颜色
+      scheme: white
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)" # 浅色
+      scheme: white
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" # 深色
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font: # 字体，大概率不需要换
+    text: Roboto
+    code: Roboto Mono
+  favicon: images/logo.png # 网站图标 似乎不需要管
+
+# Plugins
+plugins:
+  - tags # 标签功能插件
+  #- blog # 博客功能插件
+  # - social # 目前我开启会报错，还没研究透 
+  - search: # 搜索插件
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])' # 分隔符
+  # - privacy # 隐私插件
+extra:
+  generator: false # 是否显示生成器
+  status: # 不是很懂有什么用
+    new: Recently added
+    deprecated: Deprecated
+  analytics: # 分析工具， 我反正没用到
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    feedback: # feedback form
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+markdown_extensions: # markdown extensions
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+nav: 
+  - 首页:
+    - 简介: index.md
+  - git学习:
+    - learn-git: "git学习/learn-git.md"
+  - 注入: 
+    - union联合注入和盲注: "注入/union联合注入和盲注.md"
+    - 报错注入: "注入/报错注入.md"
+    - 宽字节注入: "注入/宽字节注入.md"
+    - dnslog注入: "注入/dnslog注入.md"
+    - sqlmap: "注入/sqlmap.md"
+  - 文件上传: 
+    - 文件上传漏洞: "文件上传/文件上传漏洞.md"
+    - webshell: "文件上传/webshell.md"
