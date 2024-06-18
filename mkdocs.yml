@@ -24,7 +24,7 @@ theme:
     # - content.code.select # 选择代码按钮
     # - content.tabs.link # 链接标签
     - content.tooltips # 不太清楚呢这个
-    # - header.autohide # 自动隐藏header
+    - header.autohide # 自动隐藏header
     - navigation.expand # 默认展开导航栏
     - navigation.footer # 底部导航栏
     - navigation.indexes # 索引按钮可以直接触发文件，而不是只能点击其下属选项浏览，这个功能可以给对应的section提供很好的预览和导航功能
