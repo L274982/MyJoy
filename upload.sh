@@ -18,5 +18,5 @@ git push origin master
 # git push -u origin main
 echo '--------push to GitHub successfully--------'
 
-mkdocs gh-deploy
+mkdocs gh-deploy --force
 echo '--------deployed to Github Pages sucessfully--------'
