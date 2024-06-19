@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://107.151.201.118/emoji/emoji/</loc>
+         <lastmod>2024-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://107.151.201.118/git%E5%AD%A6%E4%B9%A0/learn-git/</loc>
          <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>

@@ -17,6 +17,6 @@ git push origin master
 # git remote add origin https://github.com/Shuaiwen-Cui/Infinity.git/
 # git push -u origin main
 echo '--------push to GitHub successfully--------'
-
+mkdocs build
 mkdocs gh-deploy --force
 echo '--------deployed to Github Pages sucessfully--------'
