@@ -166,3 +166,5 @@ nav:
     - webshell: "文件上传/webshell.md"
   - 文件包含:
     - 文件包含漏洞: "文件包含/文件包含漏洞.md"
+  - emoji:
+    - emoji: "emoji/emoji.md"
