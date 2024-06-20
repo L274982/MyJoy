@@ -12,10 +12,10 @@ echo '--------download files start--------'
 #git commit -m 'auto update Infinity'
 #echo '--------commit successfully--------'
 git fetch
-echo '--------update successfully--------'
+echo '--------get status successfully--------'
 
 git reset --hard origin/master
-echo '--------更新 successfully--------'
+echo '--------update successfully--------'
 #git push origin master
 # git push -u https://github.com/Shuaiwen-Cui/Infinity.git/ main
 # git remote add origin https://github.com/Shuaiwen-Cui/Infinity.git/
