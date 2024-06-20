@@ -22,3 +22,5 @@ echo '--------更新 successfully--------'
 # git push -u origin main
 mkdocs build
 echo '--------build sucessfully--------'
+systemctl restart nginx
+echo '-----restart successfully-----'
