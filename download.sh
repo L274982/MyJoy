@@ -21,6 +21,6 @@ echo '--------update successfully--------'
 # git remote add origin https://github.com/Shuaiwen-Cui/Infinity.git/
 # git push -u origin main
 mkdocs build
-echo '--------build sucessfully--------'
+echo '--------build successfully--------'
 systemctl restart nginx
 echo '-----restart successfully-----'
