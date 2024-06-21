@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://107.151.201.118/XSS/%E4%BB%8B%E7%BB%8D/</loc>
+         <lastmod>2024-06-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://107.151.201.118/emoji/emoji/</loc>
          <lastmod>2024-06-20</lastmod>
          <changefreq>daily</changefreq>

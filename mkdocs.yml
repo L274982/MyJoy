@@ -171,5 +171,6 @@ nav:
     - 目录遍历漏洞: "服务器配置错误漏洞/目录遍历漏洞.md"
   - XSS:
     - 介绍: "XSS/介绍.md"
+    - 通过XSS盗取Cookie: "XSS/通过XSS盗取Cookie.md"
   - emoji:
     - emoji: "emoji/emoji.md"
